@@ -6,17 +6,31 @@
 <title>MeuCelularTop</title>
 
 <style>
-body{
-font-family:Arial,sans-serif;
+*{
 margin:0;
-background:#f4f4f4;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fb;
 }
 
 header{
-background:#2563eb;
+background:linear-gradient(135deg,#2563eb,#06b6d4);
 color:white;
+padding:50px 20px;
 text-align:center;
-padding:40px;
+}
+
+header h1{
+font-size:3rem;
+}
+
+header p{
+margin-top:10px;
+font-size:1.2rem;
 }
 
 nav{
@@ -27,38 +41,63 @@ text-align:center;
 
 nav a{
 color:white;
-margin:10px;
 text-decoration:none;
+margin:0 15px;
 font-weight:bold;
 }
 
 .container{
 max-width:1200px;
 margin:auto;
-padding:20px;
+padding:30px 20px;
+}
+
+.anuncio{
+background:#ffe082;
+border:2px dashed #f59e0b;
+padding:25px;
+text-align:center;
+border-radius:10px;
+margin:25px 0;
+font-weight:bold;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
 }
 
 .card{
 background:white;
 padding:20px;
-border-radius:10px;
-margin-bottom:20px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+border-radius:12px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
-.ads{
-background:#e5e7eb;
-padding:30px;
-text-align:center;
-border-radius:10px;
-margin:20px 0;
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+margin-bottom:15px;
+}
+
+.botao{
+display:inline-block;
+background:#2563eb;
+color:white;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
 }
 
 footer{
 background:#111827;
 color:white;
 text-align:center;
-padding:20px;
+padding:25px;
+margin-top:40px;
 }
 </style>
 </head>
@@ -67,41 +106,70 @@ padding:20px;
 
 <header>
 <h1>📱 MeuCelularTop</h1>
-<p>Dicas, reviews e comparativos de celulares</p>
+<p>Dicas, reviews e comparativos dos melhores celulares</p>
 </header>
 
 <nav>
 <a href="#">Início</a>
-<a href="#">Melhores Celulares</a>
+<a href="#">Celulares</a>
 <a href="#">Reviews</a>
 <a href="#">Comparativos</a>
+<a href="#">Contato</a>
 </nav>
 
 <div class="container">
 
-<div class="card">
-<h2>Melhores Celulares até R$1000</h2>
-<p>Confira os modelos com melhor custo-benefício em 2026.</p>
+<div class="anuncio">
+🚀 ESPAÇO PARA ANÚNCIO
 </div>
 
-<div class="ads">
-ESPAÇO PARA ANÚNCIOS
+<h2>🔥 Artigos Mais Populares</h2>
+
+<br>
+
+<div class="grid">
+
+<div class="card">
+<h3>Melhores celulares até R$1000</h3>
+<p>Confira os aparelhos com melhor custo-benefício do mercado.</p>
+<a class="botao" href="celulares1000.html">Saiba Mais</a>
 </div>
 
 <div class="card">
-<h2>Samsung ou Motorola?</h2>
-<p>Veja qual marca vale mais a pena para comprar.</p>
+<h3>Samsung ou Motorola?</h3>
+<p>Descubra qual marca vale mais a pena em 2026.</p>
+<a class="botao" href="samsung-ou-motorola.html">Saiba Mais</a>
 </div>
 
 <div class="card">
-<h2>Como aumentar a bateria do celular</h2>
-<p>Dicas simples para fazer sua bateria durar mais.</p>
+<h3>Como economizar bateria</h3>
+<p>Dicas simples para aumentar a duração da bateria.</p>
+<a class="botao" href="bateria.html">Saiba Mais</a>
 </div>
+
+<div class="card">
+<h3>Melhores celulares para jogos</h3>
+<p>Veja quais aparelhos rodam Free Fire, Roblox e Valorant Mobile.</p>
+<a class="botao" href="jogos.html">Saiba Mais</a>
+</div>
+
+</div>
+
+<div class="anuncio">
+💰 ESPAÇO PARA ANÚNCIO ADSENSE
+</div>
+
+<h2 style="margin-top:30px;">📢 Notícias de Tecnologia</h2>
+
+<p style="margin-top:10px;">
+Fique por dentro dos lançamentos, atualizações de Android,
+novos celulares Samsung, Motorola, Xiaomi e muito mais.
+</p>
 
 </div>
 
 <footer>
-© MeuCelularTop
+© 2026 MeuCelularTop - Todos os direitos reservados
 </footer>
 
 </body>
